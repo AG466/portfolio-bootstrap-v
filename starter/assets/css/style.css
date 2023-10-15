@@ -5,16 +5,60 @@
 
 .card{
   margin: 20px;
+  flex: 1;
+  height:auto;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 img{
   height: auto;
 }
 
-#prof-pic{
- width: 40%;
- padding-right: 30px;
- padding-left: 30px;
- padding-top: 25px;
- border: 15px;
+#prof-pic-lg{
+  width:40%;
+  padding: 15px;
+}
+
+p{
+  font-family: "playfair display";
+}
+
+.title{
+  font-family: "playfair display";
+}
+
+.jumbotron-title{
+  margin: 50px;
+}
+
+
+.card-title{
+  font-size: 2rem;
+}
+
+.email-phone-section{
+  height: 500px;
+  background-color: white  ;
+}
+
+.sub-project{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.side-title:hover{
+  background-color: navajowhite;
+}
+
+.card-img-top-a{
+  width: 294px;
+  height: 294px;
 }
