@@ -1,0 +1,641 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  line-height: 1.5;
+  background-color: rgb(2, 2, 83);
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+
+  #title{
+    background-color: white;
+    text-align: center;
+    color: rgb(2, 2, 83);
+    font-size: 16pt;
+    padding: 20px
+  }
+
+
+  /*nav*/
+  .flex-nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(2, 2, 83);
+    border-bottom: 3px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px;
+    border-style:dotted;
+    border-color:navajowhite;
+  }
+
+  .flex-nav-item {
+    flex-wrap: wrap;
+    text-align: center;
+    height: 70px;
+    padding-top: 20px;
+    flex: 1;
+    background-color: rgb(2, 2, 83);
+    color: whitesmoke;
+    font-size: xx-large;
+    margin-bottom: 50px;
+  }
+
+  .flex-nav-item:hover{
+    color: rgb(2, 2, 83);
+    background: navajowhite;
+    cursor:pointer;
+    text-decoration: none;
+
+  }
+
+   #nav-link:visited{
+
+    color: white;
+
+  } 
+
+  #nav-link:link{
+    color: white;
+   
+  }
+
+  #nav-link:hover{
+    color: rgb(2, 2, 83);
+  }
+
+  #nav-link:link, #nav-link:visited {
+    text-decoration: none;
+  }
+  
+  /*grid-start*/
+  .grid-parent {
+    background-color: rgb(2, 2, 83);
+    display: grid;
+    padding: 0px;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 200px;
+    grid-template-areas:
+      "intro-title int head"
+      "proj-title proj-2 proj-2 "
+      "proj-title proj-3 proj-5"
+      "cont cont cont"
+    ;
+  }
+
+  .grid-head {
+    grid-area: head;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 50px 12.5px 12.5px 25px;
+  }
+
+  .flex1 {
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+
+
+   #pro-pic{
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto;
+   
+   }
+
+  .intro-section-title{
+
+    grid-area: intro-title;
+    background-color: rgb(2, 2, 83);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 12.5px 50px;
+    border-right: 1pt;
+    border-left: 0pt;
+    border-top: 0pt;
+    border-bottom: 0pt;
+    border-color:navajowhite;
+    border-style: solid;
+  }
+
+  .intro-section-title:hover{
+    background-color: navajowhite;
+    color: rgb(2, 2, 83);
+  }
+
+  .grid-intro:hover{
+    background-color: navajowhite;
+    color: rgb(2, 2, 83);
+  }
+
+  .intro-section-title:hover + .grid-intro,
+  .intro-section-title:hover + .flex1
+  {
+    border: 1pt;
+    border-color: navajowhite;
+    border-style: solid;
+  }
+
+
+  .grid-intro {
+    grid-area: int;
+    background-color: rgb(2, 2, 83);
+    color: white;
+    font-style: italic;
+    margin: 50px 12.5px 12.5px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 20px 20px
+  
+  }
+
+ 
+
+  .project-section-title{
+    /* margin-left: 100px;
+    margin-right: 40px;
+    padding: 20px 20px 20px 20px; */
+    grid-area: proj-title;
+    background-color: rgb(2, 2, 83);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 12.5px 50px;
+    border-right: 1pt;
+    border-left: 0pt;
+    border-top: 0pt;
+    border-bottom: 0pt;
+    border-color:navajowhite;
+    border-style: solid;
+
+   
+  }
+
+  .project-section-title:hover{
+    background-color: navajowhite;
+    color: rgb(2, 2, 83);
+  }
+
+  .project-section-title:hover + .proj-tile
+  {
+    border: 2pt;
+    border-color: whitesmoke;
+    border-style: solid;
+
+  }
+
+ 
+
+
+  /* .grid-project-1 {
+    margin: 40px 35px 35px 50px;
+    padding: 20px 20px 20px 20px;
+    grid-area: proj-1;
+    background-image: url("../images/map-project-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: coral;
+  } */
+
+  .proj-tile{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-color: black;
+    display: flex;
+    align-items: end;
+    justify-content:baseline;
+    margin: 50px 12.5px 12.5px 25px;
+  }
+
+  .img-title-text{
+    background:whitesmoke;
+    color: black;
+  }
+
+  #grid-project-2 {
+   
+    grid-area: proj-2;
+    background-image: url("../images/map-project-image.png");
+    
+
+  }
+
+  #map-build-txt{
+    display: none;
+  }
+
+  #grid-project-2:hover #map-build-txt{
+    display: inline;
+    grid-area: proj-2;
+    background-color: black;
+    color: white;
+  }
+
+
+ 
+
+  #grid-project-3 {
+    grid-area: proj-3;
+    background-image: url("../images/Screenshot\ 2023-10-07\ at\ 20.13.37.png");
+    background-repeat: no-repeat;
+  
+    }
+
+  #horiseon-txt{
+    display: none;
+ 
+  }
+
+  #grid-project-3:hover #horiseon-txt{
+    display: inline;
+    grid-area: proj-3;
+    background-color: black;
+    color: white;
+  }
+
+  #grsk-txt{
+    display: none;
+
+  }
+
+  #grid-project-5:hover #grsk-txt{
+    display: inline;
+    grid-area: proj-5;
+    background-color: black;
+    color: white;
+  }
+
+  /* .grid-project-4 {
+    grid-area: proj-4;
+    background-image: url("../images/map-project-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 100px;
+
+  } */
+
+  #grid-project-5 {
+    grid-area: proj-5;
+    background-image: url("../images/grasko-handel.png");
+    background-repeat: no-repeat;
+  }
+
+  #grid-project-6 {
+    grid-area: proj-6;
+    background-image: url("../images/map-project-image.png");
+
+  }
+
+  .grid-contact {
+    background-color: rgb(2, 2, 83);
+    color: white;
+    border-radius: 2%;
+    grid-area: cont;
+    margin: 50px 0px 12.5px 50px;
+
+ 
+    
+  }
+
+  .img-txt-proj{
+    background-color: white;
+  }
+    #cont-list{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      font-size: 11pt ;
+      color: navajowhite;
+      text-decoration: none;
+  
+    }
+
+    #cont-list li{
+      display: inline-block;
+      margin: 50px 50px 12.5px 50px;
+
+    
+    }
+
+  }
+
+
+/* --- Below is the code for the version of the page displayed when the device view-port is between 300 and 899px*/
+
+
+
+
+  @media screen and (min-width: 300px) and (max-width:899px) {
+    
+    #title{
+      background-color: navajowhite;
+      text-align: center;
+      font-size: 16pt;
+      padding: 20px;
+    }
+
+
+     /*nav*/
+  .flex-nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 2, 83);
+    border-bottom: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px;
+    border-color: navajowhite;
+    border-style:dotted;
+  }
+
+  .flex-nav-item {
+    flex-wrap: wrap;
+    text-align: center;
+    height: 70px;
+    padding-top: 5px;
+    flex: 1;
+    background-color: rgb(2, 2, 83);
+    color: whitesmoke;
+    font-size: 12pt;
+    margin-bottom: 12px;
+  }
+
+  .flex-nav-item:hover{
+    color: rgb(2, 2, 83);
+    background: navajowhite;
+    cursor:pointer;
+    text-decoration: none;
+
+  }
+
+   #nav-link:visited{
+
+    color: white;
+
+  } 
+
+  #nav-link:link{
+    color: white;
+   
+  }
+
+  #nav-link:hover{
+    color: rgb(2, 2, 83);
+  }
+
+
+    .grid-parent {
+      display: grid;
+      grid-template-columns: auto;
+      background-color: rgb(2, 2, 83) ;
+      grid-template-rows: 1fr 0.1fr 0.1fr 0.25fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "head"
+        "intro-title"
+        "int"
+        "proj-title"
+        "proj-2"
+        "proj-3"
+        "proj-5"
+        "cont";
+    }
+
+    .grid-head {
+      grid-area: head;
+      size: auto;
+    }
+  
+    .flex1 {
+      flex-wrap: wrap;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+    }
+  
+     #pro-pic{
+      max-width: 100%; 
+      max-height: 100%;
+      margin: 40px;
+      padding: 50px;
+      width: auto; 
+      height: auto;
+      border-radius: 50%;
+      border-color: navajowhite;
+      border-width: 3px;
+      border-style: groove;
+      
+     
+     }
+  
+    .intro-section-title{
+
+      grid-area: intro-title;
+      background-color: rgb(2, 2, 83);
+      color: navajowhite;
+      text-decoration:underline;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin: 20px 1px 1px 5px;
+      border: antiquewhite;
+      border-radius: 5%;
+      
+     
+    }
+
+
+     .grid-intro {
+      grid-area: int;
+      background-color: rgb(2, 2, 83);
+      color: white;
+      font-style: italic;
+      margin: 10px 10px 10px 10px;
+      padding: 30px 70px 30px 70px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 0px 0px 0px 0px;
+      border-color: navajowhite;
+      border-style: dashed;
+    
+    }
+  
+    .project-section-title{
+
+      grid-area: proj-title;
+      background-color: rgb(2, 2, 83);
+      color: navajowhite;
+      text-decoration: underline;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 50px 12.5px 50px;
+      border-radius: 5%;
+   
+     
+    }
+
+    .img-title-text{
+      background:whitesmoke;
+      color: black;
+    }
+    
+    #grid-project-2 {
+   
+      grid-area: proj-2;
+      background-image: url("../images/map-project-image.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 40px;
+    }
+
+    #map-build-txt{
+      display: none;
+    }
+  
+    #grid-project-2:hover #map-build-txt{
+      display: inline;
+      grid-area: proj-2;
+      background-color: black;
+      color: white;
+    }
+
+    #grid-project-3 {
+      grid-area: proj-3;
+      background-image: url("../images/Screenshot\ 2023-10-07\ at\ 20.13.37.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 40px;
+    }
+      
+
+      #horiseon-txt{
+        display: none;
+     
+      }
+    
+      #grid-project-3:hover #horiseon-txt{
+        display: inline;
+        grid-area: proj-3;
+        background-color: black;
+        color: white;
+      }
+    
+      #grid-project-5 {
+        grid-area: proj-5;
+        background-image: url("../images/grasko-handel.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 40px;
+      }
+
+      #grsk-txt{
+        display: none;
+    
+      }
+    
+      #grid-project-5:hover #grsk-txt{
+        display: inline;
+        grid-area: proj-5;
+        background-color: black;
+        color: white;
+      }
+    
+
+
+      /*contact section*/
+
+    .grid-contact {
+      background-color: rgb(2, 2, 83);
+      color: navajowhite;
+      border-radius: 2%;
+      grid-area: cont;
+      margin: 50px 12.5px 10px 10pxpx;
+      
+    }
+  
+    
+
+    #cont-list{
+        list-style: none;
+        align-items: baseline;
+        justify-content: baseline;
+        font-size: 12pt ;
+  
+    
+    }
+  
+    #cont-list li{
+        margin: 50px 50px 12.5px 50px;
+  
+      
+    }
+  
+
+
+
+
+  }
+
+
+
+
+  /* .grid-intro{
+  grid-area: int;
+}
+
+.grid-projects{
+  grid-area: proj;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin: 40px;
+}
+
+.grid-contact{
+  grid-area: cont;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin: 40px;
+}
+ */
