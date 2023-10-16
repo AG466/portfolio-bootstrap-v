@@ -1,3 +1,13 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
 #cont-list{
   margin:30px;
   padding: 20px;
@@ -9,14 +19,12 @@
   height:auto;
 
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.card-img-top-a{
+  width: 100%;
+  height: auto;
 }
+
+
 
 img{
   height: auto;
@@ -28,7 +36,7 @@ img{
 }
 
 p{
-  font-family: "playfair display";
+  font-family: "Tenor Sans";
 }
 
 .title{
@@ -37,8 +45,9 @@ p{
 
 .jumbotron-title{
   margin: 50px;
+  font-family: "Tenor Sans";
+  font-stretch: wider;
 }
-
 
 .card-title{
   font-size: 2rem;
@@ -56,9 +65,37 @@ p{
 
 .side-title:hover{
   background-color: navajowhite;
+  align-content: center;
+  justify-content: center;
 }
 
-.card-img-top-a{
-  width: 294px;
-  height: 294px;
+
+
+.side-card-l1{
+  background-color: rgb(188, 20, 45);
+  color: white;
+  font-family: "Tenor Sans";
+}
+
+.btn{
+  background-color: rgb(188, 20, 45);
+  font-family: "Tenor Sans";
+
+}
+
+.side-card-l1:hover{
+  box-shadow:2px 2px 40px rgba(0, 0, 0, 0.167);
+}
+
+.r-ul{
+  text-decoration: underline;
+  text-decoration-color: rgb(188, 20, 45) ;
+
+}
+
+.l-border{
+  border-right: solid;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(188, 20, 45);
 }
