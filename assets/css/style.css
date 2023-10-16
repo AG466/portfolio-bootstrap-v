@@ -25,7 +25,6 @@
 }
 
 
-
 img{
   height: auto;
 }
@@ -98,4 +97,9 @@ p{
   border-bottom: solid;
   border-width: 1px;
   border-color: rgb(188, 20, 45);
+}
+
+.rtrn:hover {
+ background-color:rgb(188, 20, 45);
+ color: white;
 }

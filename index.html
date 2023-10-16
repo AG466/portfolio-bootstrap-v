@@ -16,8 +16,8 @@
 
 <body id="bod">
 
-<!--nav-->
-
+  <!--nav-->
+  <!--navbar based on bootstrap-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
     <div class="container-fluid" id="nav">
       <a class="navbar-brand title" id="top">A.G.</a>
@@ -28,30 +28,35 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about-me"><button type="button" class="btn btn-danger">About</button></a>
+            <a class="nav-link active" aria-current="page" href="#about-me"><button type="button"
+                class="btn btn-danger">About</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#skills"><button type="button" class="btn btn-danger">Skills</button></a>
+            <a class="nav-link active" aria-current="page" href="#skills"><button type="button"
+                class="btn btn-danger">Skills</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#projects"><button type="button" class="btn btn-danger">Projects</button></a>
+            <a class="nav-link active" aria-current="page" href="#projects"><button type="button"
+                class="btn btn-danger">Projects</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#contact"><button type="button" class="btn btn-danger">Contact</button></a>
+            <a class="nav-link active" aria-current="page" href="#contact"><button type="button"
+                class="btn btn-danger">Contact</button></a>
           </li>
         </ul>
-        
+
       </div>
     </div>
   </nav>
   </div>
 
   <!--jumbotron-->
-
+<!--jumbotron based on bootstrap-->
   <div class="jumbotron jumbotron-fluid">
     <div class="container mx-auto">
       <h1 class="display-1 w-50 mx-auto text-center jumbotron-title r-ul">Aiden Graham</h1>
-      <p class="lead w-75 mx-auto text-center font-weight-bold lead">Hi! My name is Aiden and this is my portfolio site. Here you can view
+      <p class="lead w-75 mx-auto text-center font-weight-bold lead">Hi! My name is Aiden and this is my portfolio site.
+        Here you can view
         various front-end projects I have completed as well as some works in progress.</p>
     </div>
   </div>
@@ -75,29 +80,32 @@
       <div class="col-sm-12 col-md-4">
         <div class="card">
           <div class="card-body">
-            <p class="card-text">My ambition is to change my career path and become a front end developer. <br>
-              <br>I'm
-              currently enrolled on a 16-week bootcamp where I hope to further my understanding of code and
-              design
-              processes which are used to create attractive and engaging web-pages. I hope to walk away from this
-              course
-              ready to land a job in tech. I would like to combine my technical knowledge of HTML, CSS and
-              JavaScript
-              with my passion for design. On this page you can browse some of my current and past projects. You can also
-              reach out via the information in the contact section to discuss working together or discuss working in
-              tech.
+            <p class="card-text lead">My ambition is to change my career path and become a front end developer... </p>
+
+            I'm
+            currently enrolled on a 16-week bootcamp where I hope to further my understanding of the code and
+            design
+            processes which are used to create attractive and engaging web-pages. <br>I hope to leave this
+            bootcamp
+            ready to land a job in tech.<br>I would like to combine my technical knowledge of HTML, CSS and
+            JavaScript
+            with my passion for design and ability to write compelling copy. <br>On this page you can browse some of my
+            current and past projects. You can also
+            reach out via the information in the contact section to discuss opportunities for networking /
+            collaboration.
             </p>
           </div>
         </div>
       </div>
       <div class="d-none d-sm-none d-md-block col-sm-5 col-md-5" id="prof-pic-lg">
-        <img src="./assets/images/Profile Picture 1.jpeg" class="l-border img-fluid rounded mx-auto d-block" alt="Responsive image">
+        <img src="./assets/images/Profile Picture 1.jpeg" class="l-border img-fluid rounded mx-auto d-block"
+          alt="Responsive image">
       </div>
     </div>
   </div>
 
-<!--row 2: Skills section-->
-
+  <!--row 2: Skills section-->
+ <!--Cards from bootstrap-->
   <div class="container side-title">
     <div class="row">
       <div class="col-sm-12 col-lg-3">
@@ -154,7 +162,9 @@
   </div>
 
 
-<!--row 3: Projects section-->
+  <!--row 3: Projects section-->
+   <!--Cards from bootstrap-->
+
   <div class="container text-center side-title"">
     <div class=" row">
     <div class="col-sm-12 col-md-3">
@@ -170,7 +180,7 @@
     </div>
     <div class="col-sm-12 col-md-9">
       <div class="card mh-100">
-        <img class="card-img-top" src="./assets/images/grasko-handel.png" alt="Card image cap">
+        <a href="https://ag466.github.io/grasko-handel/"><img class="card-img-top" src="./assets/images/grasko-handel.png" alt="Card image cap"></a>
         <div class="card-body">
           <p class="card-title r-ul">Gräskö Handel</p>
           <p class="card-text">This is a practice project. To test my HTML skills I built a website for my
@@ -181,14 +191,14 @@
     </div>
   </div>
 
-<!--row 3a: Projects section cont-->
+  <!--row 3a: Projects section cont-->
 
   <div class="row projects-row-2">
     <div class="col-sm-12 col-md-3">
     </div>
     <div class="col-sm-12 col-md-3 sub-project">
       <div class="card d-flex h-100">
-        <img class="card-img-top" src="./assets/images/Screenshot 2023-10-07 at 20.13.37.png" alt="Card image cap">
+        <a href="https://ag466.github.io/horiseon_accessible_v/"><img class="card-img-top" src="./assets/images/Screenshot 2023-10-07 at 20.13.37.png" alt="Card image cap"></a>
         <div class="card-body">
           <p class="card-title shadow-sm r-ul">Horiseon Accessibility</p>
           <p class="card-text"> For Horiseon, I improved the accessibility of their home-page. This work involved
@@ -198,7 +208,7 @@
     </div>
     <div class="col-sm-12 col-md-3 sub-project">
       <div class="card d-flex h-100">
-        <a href="https://betfred.com"><img class="card-img-top" src="./assets/images/map-project-image.png"></a>
+        <a href="https://ag466.github.io/map/"><img class="card-img-top" src="./assets/images/map-project-image.png"></a>
         <div class="card-body">
           <p class="card-title shadow-sm r-ul">Prototype Map Application</p>
           <p class="card-text">This project started when I wanted to make a customised app which could hold
@@ -210,7 +220,7 @@
     </div>
     <div class="col-sm-12 col-md-3 sub-project">
       <div class="card h-100">
-        <img class="card-img-top" src="./assets/images/Screenshot 2023-10-07 at 20.13.37.png" alt="Card image cap">
+        <a href="https://ag466.github.io/horiseon_accessible_v/"><img class="card-img-top" src="./assets/images/Screenshot 2023-10-07 at 20.13.37.png" alt="Card image cap"></a>
         <div class="card-body">
           <p class="card-title shadow-sm r-ul">Prototype Map Application</p>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -223,6 +233,8 @@
   </div>
 
   <!--row 4: Contact section-->
+   <!--Cards from bootstrap-->
+  <!--Icons from FontAwesome-->
 
   <div class="container side-title">
     <div class="list-group">
@@ -237,16 +249,18 @@
         <div class="list-group col-sm-12 col-md-9">
           <div class="list-group">
             <div class="list-group-item list-group-item-action">
-              <i class="fa-regular fa-envelope"></i>:<a href="mailto:aiden_graham94@outlook.com">aidengraham94@icloud.com</a>
+              <i class="fa-regular fa-envelope"></i>:<a href="mailto:aiden_graham94@outlook.com">
+                aidengraham94@icloud.com</a>
             </div>
             <div class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-phone"></i>: <a href="mailto:aiden_graham94@outlook.com">+447561023446</a>
+              <i class="fa-solid fa-phone"></i>: <a >+447561023446</a>
             </div>
             <div class="list-group-item list-group-item-action">
               <i class="fa-brands fa-github"></i>: <a href="https://github.com/AG466">AG466</a>
             </div>
             <div class="list-group-item list-group-item-action">
-              <i class="fa-brands fa-linkedin"></i>: <a href="https://www.linkedin.com/in/aidengraham/">View career and education
+              <i class="fa-brands fa-linkedin"></i>: <a href="https://www.linkedin.com/in/aidengraham/">View career and
+                education
                 experiences</a>
             </div>
           </div>
@@ -256,7 +270,7 @@
   </div>
 
 
-<!--Footer:-->
+  <!--Footer:-->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-sm-1 col-md-4 mb-0 text-body-secondary">&copy; 2023 Aiden Graham</p>
@@ -274,7 +288,7 @@
 
 
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#top" class="nav-link px-2 text-body-secondary">Return to Top</a></li>
+        <li class="nav-item"><a href="#top" class="nav-link px-2 text-body-secondary"><p class="rtrn">Return to Top</p></a></li>
         <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
